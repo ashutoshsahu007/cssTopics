@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border: 5px solid black;
+        margin: 20px;
+        background-color: red;
+      }
+      #div1 {
+        position: static;
+      }
+      #div2 {
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+      #div3 {
+        position: absolute;
+        top: 20px;
+        left: 100px;
+      }
+      #div4 {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- normal position jo hm dete hai , apne page pe hi rahega -->
+    <div id="div1">static</div>
+    <!-- relative to itself -> jaha main hota , apne page pe hi rahega -->
+    <div id="div2">relative</div>
+    <!-- absolute -> page ka corner se na khud se matab na patent se, page se bahar aa jayga  -->
+    <div id="div3">absolute</div>
+    <!-- fixed -> page ka corner se na khud se matlba na parent se , page se bahar aa jayga -->
+    <div id="div4">fixed</div>
+  </body>
+</html>
